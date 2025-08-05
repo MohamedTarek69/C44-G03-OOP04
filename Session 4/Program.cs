@@ -66,6 +66,15 @@ namespace Session_4
             Console.WriteLine("==============");
             Console.WriteLine($"C3 => {C3}");
 
+            //----------------------------------- Vedio 04 -------------------------------------
+            Console.WriteLine("==============");
+            C3++;
+            Console.WriteLine($"C3 => {C3}");
+
+            Console.WriteLine("==============");
+            C3--;
+            Console.WriteLine($"C3 => {C3}");
+
 
         }
     }
