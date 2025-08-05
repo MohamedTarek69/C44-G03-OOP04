@@ -1,4 +1,6 @@
-﻿using Session_4.Overloading;
+﻿
+using Session_4.Overloading;
+using Session_4.Overriding;
 
 namespace Session_4
 {
@@ -46,17 +48,18 @@ namespace Session_4
             #endregion
 
             //----------------------------------- Vedio 03 -------------------------------------
+            #region Operator  - Casting Overloading
             //5 + 4i
-            Complex C1 = new Complex
-            {
-                Real = 10,
-                Img = 5
-            };
+            //Complex C1 = new Complex
+            //{
+            //    Real = 10,
+            //    Img = 5
+            //};
 
-            Console.WriteLine($"C1 => {C1}");
+            //Console.WriteLine($"C1 => {C1}");
 
-            Complex C2 = new Complex() { Real = 6, Img = 2 };
-            Console.WriteLine($"C2 => {C2}");
+            //Complex C2 = new Complex() { Real = 6, Img = 2 };
+            //Console.WriteLine($"C2 => {C2}");
 
             //Complex C3 = C1 + C2;
             //Console.WriteLine("==============");
@@ -83,28 +86,47 @@ namespace Session_4
             //    Console.WriteLine("C1 < C2");
 
             //----------------------------------- Vedio 06 -------------------------------------
-            int Xe = (int)C1;
+            //int Xe = (int)C1;
 
-            string X = C1;
+            //string X = C1;
 
-            Console.WriteLine($"X => {X}");
+            //Console.WriteLine($"X => {X}");
 
             //----------------------------------- Vedio 07 -------------------------------------
-            User UserObj = new User()
-            {
-                Id = 10,
-                FullName = "Mohamed Tarek",
-                Email = "Mohamed@gmail.com",
-                Password = "P@ssw0rd",
-                SecurityStamp = Guid.NewGuid()
-            };
+            //User UserObj = new User()
+            //{
+            //    Id = 10,
+            //    FullName = "Mohamed Tarek",
+            //    Email = "Mohamed@gmail.com",
+            //    Password = "P@ssw0rd",
+            //    SecurityStamp = Guid.NewGuid()
+            //};
 
-            //Mapping
-            UserViewModel userViewModel = (UserViewModel)UserObj;
-            Console.WriteLine($"Id: {userViewModel.Id}");
-            Console.WriteLine($"FirstName: {userViewModel.FirstName}");
-            Console.WriteLine($"LastName: {userViewModel.LastName}");
-            Console.WriteLine($"Email: {userViewModel.Email}");
+            ////Mapping
+            //UserViewModel userViewModel = (UserViewModel)UserObj;
+            //Console.WriteLine($"Id: {userViewModel.Id}");
+            //Console.WriteLine($"FirstName: {userViewModel.FirstName}");
+            //Console.WriteLine($"LastName: {userViewModel.LastName}");
+            //Console.WriteLine($"Email: {userViewModel.Email}");
+
+            #endregion
+
+            //----------------------------------- Vedio 08 -------------------------------------
+            #region Overriding
+
+            //TypeA typeA = new TypeA(1);
+            //typeA.A = 10;
+            //typeA.MyFun01();
+            //typeA.MyFun02();
+
+            //TypeB typeB = new TypeB(1, 2);
+            //typeB.A = 10;
+            //typeB.B = 20;
+            //typeB.MyFun01();
+            //typeB.MyFun02();
+
+
+            #endregion
 
         }
     }
