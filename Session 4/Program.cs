@@ -1,4 +1,6 @@
-﻿namespace Session_4
+﻿using Session_4.Overloading;
+
+namespace Session_4
 {
     internal class Program
     {
@@ -28,7 +30,8 @@
         static void Main(string[] args)
         {
             //----------------------------------- Vedio 02 -------------------------------------
-            int A = 10 , B = 20 , C = 30 ;
+            #region Method Overloading 
+            //int A = 10 , B = 20 , C = 30 ;
             //int Result = SumTwoNumbers(A, B);
             //int Result = SumThreeNumbers(A, B, C);
             //double Result = SumDoubleTwoNumbers(A, B);
@@ -39,7 +42,29 @@
             //Console.WriteLineString()
             //Console.WriteLineFloat()
 
-            //Console.WriteLine();
+            //Console.WriteLine(); 
+            #endregion
+
+            //----------------------------------- Vedio 03 -------------------------------------
+            //5 + 4i
+            Complex C1 = new Complex
+            {
+                Real = 10,
+                Img = 5
+            };
+
+            Console.WriteLine($"C1 => {C1}");
+
+            Complex C2 = new Complex() { Real = 6, Img = 2 };
+            Console.WriteLine($"C2 => {C2}");
+
+            //Complex C3 = C1 + C2;
+            //Console.WriteLine("==============");
+            //Console.WriteLine($"C3 => {C3}");
+
+            Complex C3 = C1 - C2;
+            Console.WriteLine("==============");
+            Console.WriteLine($"C3 => {C3}");
 
 
         }
