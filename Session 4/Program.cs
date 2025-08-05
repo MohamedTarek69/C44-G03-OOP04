@@ -62,18 +62,25 @@ namespace Session_4
             //Console.WriteLine("==============");
             //Console.WriteLine($"C3 => {C3}");
 
-            Complex C3 = C1 - C2;
-            Console.WriteLine("==============");
-            Console.WriteLine($"C3 => {C3}");
+            //Complex C3 = C1 - C2;
+            //Console.WriteLine("==============");
+            //Console.WriteLine($"C3 => {C3}");
 
             //----------------------------------- Vedio 04 -------------------------------------
-            Console.WriteLine("==============");
-            C3++;
-            Console.WriteLine($"C3 => {C3}");
+            //Console.WriteLine("==============");
+            //C3++;
+            //Console.WriteLine($"C3 => {C3}");
 
+            //Console.WriteLine("==============");
+            //C3--;
+            //Console.WriteLine($"C3 => {C3}");
+
+            //----------------------------------- Vedio 05 -------------------------------------
             Console.WriteLine("==============");
-            C3--;
-            Console.WriteLine($"C3 => {C3}");
+            if (C1 > C2)
+                Console.WriteLine("C1 > C2");
+            else
+                Console.WriteLine("C1 < C2");
 
 
         }

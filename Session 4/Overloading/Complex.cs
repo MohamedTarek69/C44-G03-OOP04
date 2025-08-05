@@ -66,6 +66,25 @@ namespace Session_4.Overloading
                 Img = C?.Img ?? 0
             };
         }
+        public static bool operator >(Complex Left, Complex Right)
+        {
+            // left.Real > Right.Real => True
+            // left.Real < Right.Real => False
+            // left.Real == Right.Real
+            // Left.Img > Right.Img => True
+            // Left.Img < Right.Img => False
+            if(Left.Real == Right.Real)
+                return Left.Img > Right.Img;
+            else
+                return Left.Real > Right.Real;
+        }
+        public static bool operator <(Complex Left, Complex Right)
+        {
+            if (Left.Real == Right.Real)
+                return Left.Img < Right.Img;
+            else
+                return Left.Real < Right.Real;
+        }
 
         #endregion
 
