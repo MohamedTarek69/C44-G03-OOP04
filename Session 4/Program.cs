@@ -76,12 +76,18 @@ namespace Session_4
             //Console.WriteLine($"C3 => {C3}");
 
             //----------------------------------- Vedio 05 -------------------------------------
-            Console.WriteLine("==============");
-            if (C1 > C2)
-                Console.WriteLine("C1 > C2");
-            else
-                Console.WriteLine("C1 < C2");
+            //Console.WriteLine("==============");
+            //if (C1 > C2)
+            //    Console.WriteLine("C1 > C2");
+            //else
+            //    Console.WriteLine("C1 < C2");
 
+            //----------------------------------- Vedio 06 -------------------------------------
+            int Xe = (int)C1;
+
+            string X = C1;
+
+            Console.WriteLine($"X => {X}");
 
         }
     }

@@ -86,6 +86,16 @@ namespace Session_4.Overloading
                 return Left.Real < Right.Real;
         }
 
+        public static explicit operator int(Complex C)
+        {
+            return C?.Real ?? 0;
+        }
+
+        public static implicit operator string(Complex C)
+        {
+            return C?.ToString() ?? string.Empty;
+        }
+
         #endregion
 
     }
