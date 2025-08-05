@@ -26,7 +26,7 @@ namespace Session_4
         {
             return x + y;
         }
-        
+
         static void Main(string[] args)
         {
             //----------------------------------- Vedio 02 -------------------------------------
@@ -88,6 +88,23 @@ namespace Session_4
             string X = C1;
 
             Console.WriteLine($"X => {X}");
+
+            //----------------------------------- Vedio 07 -------------------------------------
+            User UserObj = new User()
+            {
+                Id = 10,
+                FullName = "Mohamed Tarek",
+                Email = "Mohamed@gmail.com",
+                Password = "P@ssw0rd",
+                SecurityStamp = Guid.NewGuid()
+            };
+
+            //Mapping
+            UserViewModel userViewModel = (UserViewModel)UserObj;
+            Console.WriteLine($"Id: {userViewModel.Id}");
+            Console.WriteLine($"FirstName: {userViewModel.FirstName}");
+            Console.WriteLine($"LastName: {userViewModel.LastName}");
+            Console.WriteLine($"Email: {userViewModel.Email}");
 
         }
     }
