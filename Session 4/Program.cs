@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Session_4.Part_01_Class;
+using System;
 
 namespace Session_4
 {
@@ -41,6 +42,34 @@ namespace Session_4
             //Complex difference = complex1 - complex2;
             //Console.WriteLine($"Sum: {sum}");
             //Console.WriteLine($"Subtract : {difference}");
+
+            #endregion
+
+            #region Question 4)
+
+            #region a) Create a base class named Employee with method That Work as it prints "Employee is  working"
+            //Employee employee = new Employee();
+            //employee.EmpName = "Mohamed Tarek";
+            //employee.EmpAge = 21;
+            //employee.EmpSalary = 50000;
+            //Console.WriteLine(employee.Work());
+            //Console.WriteLine(employee);
+
+            #endregion
+
+            //Console.WriteLine("==============================================");
+
+            #region b) Create a derived class named Manager that overrides the Work method to print "Manager is managing"
+            //*Ensure that the Manager class also calls the Work method of the Employee class within its  Overridden method
+            //Manager manager = new Manager();
+            //manager.ManagerName = "Mido Tarek";
+            //manager.ManagerAge = 21;
+            //manager.ManagerSalary = 80000;
+            //Console.WriteLine(manager.Work());
+            //Console.WriteLine(manager);
+
+
+            #endregion
 
             #endregion
 
