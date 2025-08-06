@@ -1,4 +1,5 @@
 ﻿using Session_4.Part_01_Class;
+using Session_4.Part_02_Class;
 using System;
 
 namespace Session_4
@@ -96,6 +97,121 @@ namespace Session_4
             #endregion
 
             //Then explain the difference between using override and new (using binding behavior)
+
+            #endregion
+
+            #endregion
+
+            #region Part 02
+
+            #region 1) Define Class Duration To include Three Attributes Hours, Minutes and Seconds
+            //Duration duration = new Duration(2, 30, 45);
+            //Console.WriteLine($"Duration: {duration.Hours} hours, {duration.Minutes} minutes, {duration.Seconds} seconds");
+
+            #endregion
+
+            #region 2) Override All System. Object Members [To String(), Equals(),GetHashCode()]
+            //Duration duration1 = new Duration(2, 30, 45);
+            //Duration duration2 = new Duration(2, 30, 45);
+            //Console.WriteLine(duration1.ToString());
+            //Console.WriteLine(duration1.Equals(duration2));
+            //Console.WriteLine(duration1.GetHashCode());
+            //Console.WriteLine(duration2.GetHashCode());
+
+            #endregion
+
+            #region 3) Define All Required Constructors to Produce this output
+            //Duration D1 = new Duration(1, 10, 15);
+            //D1.ToString();
+            //Output: Hours: 1, Minutes: 10, Seconds: 15
+
+            //Duration D1 = new Duration(3600);
+            //D1.ToString();
+            //Output: Hours: 1, Minutes: 0, Seconds: 0
+
+            //Duration D2 = new Duration(7800);
+            //D2.ToString();
+            //Output: Hours: 2, Minutes: 10, Seconds: 0
+
+            //Duration D3 = new Duration(666);
+            //D3.ToString();
+            //Output: Minutes: 11, Seconds: 6
+
+            //Duration D1 = new Duration(1, 10, 15);
+            //Console.WriteLine(D1.ToString());
+
+            //Duration D2 = new Duration(3600);
+            //Console.WriteLine(D2.ToString());
+
+            //Duration D3 = new Duration(7800);
+            //Console.WriteLine(D3.ToString());
+
+            //Duration D4 = new Duration(666);
+            //Console.WriteLine(D4.ToString());
+
+            #endregion
+
+            #region 4) Implement All required Operators overloading to enable this Code
+            //D3=D1+D2
+            //D3=D1 + 7800
+            //D3=666+D3
+            //D3= ++D1 (Increase One Minute)
+            //D3 = --D2 (Decrease One Minute)
+            //D1= D1 -D2
+            //If (D1>D2)
+            //If (D1<=D2)
+            //If (D1)
+            //DateTime Obj = (DateTime) D1
+
+            //Duration D1 = new Duration(1, 10, 15);
+            //Duration D2 = new Duration(3600);
+            //Duration D3 = new Duration(0, 0, 0);
+
+            //D3 = D1 + D2;
+            //Console.WriteLine($"D3=D1+D2 => {D3}\n");
+
+            //D3 = D1 + 7800;
+            //Console.WriteLine($"D3=D1 + 7800 => {D3}\n");
+
+            //D3 = 666 + D3;
+            //Console.WriteLine($"D3=666+D3 => {D3}\n");
+
+            //Console.WriteLine($"++D1 => {++D1}\n");
+
+            //Console.WriteLine($"--D2 => {--D2}\n");
+
+            //D1 = D1 - D2;
+            //Console.WriteLine($"D1=D1-D2 => {D1} \n");
+
+            //if (D1 > D2)
+            //{
+            //    Console.WriteLine("D1 is greater than D2\n");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("D1 is less than D2\n");
+            //}
+
+            //if (D1 <= D2)
+            //{
+            //    Console.WriteLine("D1 is less than or equal to D2\n");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("D1 is greater than D2\n");
+            //}
+
+            //if (D1)
+            //{
+            //    Console.WriteLine("True\n");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("False\n");
+            //}
+
+            //DateTime dateTime = (DateTime)D1;
+            //Console.WriteLine($"DateTime => {dateTime}");
 
             #endregion
 
