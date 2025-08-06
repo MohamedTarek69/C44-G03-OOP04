@@ -73,6 +73,32 @@ namespace Session_4
 
             #endregion
 
+            #region Question 5)
+
+            #region a) Create a base class BaseClass with a virtual method DisplayMessage that prints  "Message from BaseClass"
+            //BaseClass baseClass = new BaseClass();
+            //Console.WriteLine(baseClass.DisplayMessage());
+            //Console.WriteLine("==============================");
+
+            #endregion
+
+            #region b) Create a derived class DerivedClass1 that overrides the DisplayMessage method using the override keyword
+            //DerivedClass1 derivedClass1 = new DerivedClass1();
+            //Console.WriteLine(derivedClass1.DisplayMessage());
+            //Console.WriteLine("==============================");
+
+            #endregion
+
+            #region C) Create another derived class DerivedClass2 that hides the DisplayMessage method using the new keyword
+            //DerivedClass2 derivedClass2 = new DerivedClass2();
+            //Console.WriteLine(derivedClass2.DisplayMessage());
+
+            #endregion
+
+            //Then explain the difference between using override and new (using binding behavior)
+
+            #endregion
+
             #endregion
         }
     }
