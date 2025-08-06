@@ -29,10 +29,6 @@ namespace Session_4.Part_02_Class
             Minutes = totalSeconds / 60;
             Seconds = totalSeconds % 60;
         }
-        public Duration()
-        {
-
-        }
 
         #endregion
 
